@@ -14,7 +14,7 @@ import javax.inject.Inject
 
 
 @HiltViewModel
-class MainViewModel @Inject constructor(private val postService: PostService) : ViewModel() {
+class MainViewModel @Inject constructor(private val postService: PostService) : ViewModel(){
     val allPosts = MutableLiveData<ArrayList<Post>>()
     val allPostsrter = MutableLiveData<Post>()
 
