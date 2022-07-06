@@ -13,6 +13,7 @@ class RecyclerViewAdapter(private val clickListener:(Post)->Unit,private val upd
         this.movies = movies.toMutableList()
         notifyDataSetChanged()
     }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MainViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val binding = ItemLayoutPostBinding.inflate(inflater, parent, false)

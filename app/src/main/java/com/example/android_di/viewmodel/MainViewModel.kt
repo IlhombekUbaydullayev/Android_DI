@@ -38,6 +38,7 @@ class MainViewModel @Inject constructor(private val postService: PostService) : 
         postService.deletePost(id).enqueue(object : Callback<Post> {
             override fun onResponse(call: Call<Post>, response: Response<Post>) {
                 allPostsrter.value = response.body()
+                apiPostList()
                 Log.d("ok",response.body().toString())
             }
 
@@ -51,6 +52,7 @@ class MainViewModel @Inject constructor(private val postService: PostService) : 
         postService.createPost(post).enqueue(object : Callback<Post> {
             override fun onResponse(call: Call<Post>, response: Response<Post>) {
                 allPostsrter.value = response.body()
+                apiPostList()
                 Log.d("ok",response.body().toString())
             }
 
@@ -64,6 +66,7 @@ class MainViewModel @Inject constructor(private val postService: PostService) : 
         postService.updatePost(id,post).enqueue(object : Callback<Post> {
             override fun onResponse(call: Call<Post>, response: Response<Post>) {
                 allPostsrter.value = response.body()
+                apiPostList()
                 Log.d("ok",response.body().toString())
             }
 

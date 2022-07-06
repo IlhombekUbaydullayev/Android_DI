@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Android_DI</string>
+    <string name="srt_success">Welcome, ilhombek@gmail.com</string>
+    <string name="srt_failure">Check email and password again</string>
 </resources>

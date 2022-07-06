@@ -1,7 +1,6 @@
 package com.example.android_di.activity
 
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -38,7 +37,6 @@ class MainActivity : AppCompatActivity() {
             adapter!!.setMovieList(it)
         })
         viewModel.apiPostList()
-
         val floatButton = findViewById<FloatingActionButton>(R.id.b_floating)
         post = Post(0,0,"Ilhombek2","Tashkent City")
         floatButton.setOnClickListener {
@@ -53,7 +51,6 @@ class MainActivity : AppCompatActivity() {
         viewModel.allPosts.observe(this, Observer {
             adapter!!.setMovieList(it)
         })
-        viewModel.apiPostList()
     }
 
     private fun createPost(post: Post) {
@@ -62,7 +59,6 @@ class MainActivity : AppCompatActivity() {
         viewModel.allPosts.observe(this, Observer {
             adapter!!.setMovieList(it)
         })
-        viewModel.apiPostList()
     }
 
     private fun listItemClicked(seletedItem: Post) {
@@ -71,6 +67,5 @@ class MainActivity : AppCompatActivity() {
         viewModel.allPosts.observe(this, Observer {
             adapter!!.setMovieList(it)
         })
-        viewModel.apiPostList()
     }
 }

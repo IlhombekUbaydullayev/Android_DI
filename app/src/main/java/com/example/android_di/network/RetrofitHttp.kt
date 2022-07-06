@@ -14,7 +14,7 @@ import javax.inject.Singleton
 object RetrofitHttp {
     private const val IS_TESTER = false
     private const val SERVER_DEVELOPMENT = "https://jsonplaceholder.typicode.com/"
-    private const val SERVER_PRODUCTION = "https://62b4eceada3017eabb12aa49.mockapi.io/"
+    private const val SERVER_PRODUCTION = "https://62c58071a361f7251286730b.mockapi.io/"
 
     @Provides
     fun server():String {
