@@ -21,6 +21,7 @@ import dagger.hilt.android.AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     var recyclerView: RecyclerView? = null
+
     var adapter : RecyclerViewAdapter? = null
     var post : Post? = null
     private val viewModel: MainViewModel by viewModels()
