@@ -1,4 +1,4 @@
-package com.example.android_di.utils
+package com.example.androiddi.utils
 
 import android.util.Log
 import javax.inject.Inject

@@ -1,6 +1,6 @@
-package com.example.android_di
+package com.example.androiddi
 
-import com.example.android_di.network.RetrofitHttp
+import com.example.androiddi.network.RetrofitHttp
 import org.junit.Test
 
 import org.junit.Assert.*

@@ -1,4 +1,4 @@
-package com.example.android_di
+package com.example.androiddi
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

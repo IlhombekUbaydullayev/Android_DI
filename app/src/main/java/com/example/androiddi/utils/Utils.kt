@@ -1,4 +1,4 @@
-package com.example.android_di.utils
+package com.example.androiddi.utils
 
 object Utils {
     val USER_NAME = "ilhombek@gmail.com"

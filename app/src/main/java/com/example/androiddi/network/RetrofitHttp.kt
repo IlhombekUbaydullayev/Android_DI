@@ -1,6 +1,6 @@
-package com.example.android_di.network
+package com.example.androiddi.network
 
-import com.example.android_di.network.service.PostService
+import com.example.androiddi.network.service.PostService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -1,11 +1,10 @@
-package com.example.android_di.viewmodel
+package com.example.androiddi.viewmodel
 
 import android.util.Log
-import android.widget.Adapter
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.android_di.model.Post
-import com.example.android_di.network.service.PostService
+import com.example.androiddi.model.Post
+import com.example.androiddi.network.service.PostService
 import dagger.hilt.android.lifecycle.HiltViewModel
 import retrofit2.Call
 import retrofit2.Callback

@@ -1,6 +1,5 @@
-package com.example.android_di.activity
+package com.example.androiddi.activity
 
-import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -8,8 +7,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.android_di.R
-import com.example.android_di.utils.Utils
+import com.example.androiddi.R
+import com.example.androiddi.utils.Utils
 
 class LoginActivity : AppCompatActivity() {
     lateinit var et_email: EditText

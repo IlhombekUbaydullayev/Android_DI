@@ -1,10 +1,10 @@
-package com.example.android_di.adapter
+package com.example.androiddi.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.android_di.databinding.ItemLayoutPostBinding
-import com.example.android_di.model.Post
+import com.example.androiddi.databinding.ItemLayoutPostBinding
+import com.example.androiddi.model.Post
 
 
 class RecyclerViewAdapter(private val clickListener:(Post)->Unit,private val updateListener:(Post)->Unit): RecyclerView.Adapter<MainViewHolder>() {

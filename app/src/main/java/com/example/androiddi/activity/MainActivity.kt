@@ -1,16 +1,18 @@
-package com.example.android_di.activity
+package com.example.androiddi.activity
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.android_di.R
-import com.example.android_di.adapter.RecyclerViewAdapter
-import com.example.android_di.model.Post
-import com.example.android_di.viewmodel.MainViewModel
+import com.example.androiddi.R
+import com.example.androiddi.adapter.RecyclerViewAdapter
+import com.example.androiddi.model.Post
+import com.example.androiddi.utils.Keys
+import com.example.androiddi.viewmodel.MainViewModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -25,10 +27,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         initViews()
     }
 
     private fun initViews() {
+        Log.d("GetKey", Keys.getPrivateKey().toString())
+        Log.d("GetKey", Keys.getPublicKey().toString())
        recyclerView = findViewById(R.id.rv_item)
         recyclerView!!.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
         adapter = RecyclerViewAdapter({ seletedItem: Post ->listItemClicked(seletedItem)},{ updateItem: Post ->updateItemClicked(updateItem)})

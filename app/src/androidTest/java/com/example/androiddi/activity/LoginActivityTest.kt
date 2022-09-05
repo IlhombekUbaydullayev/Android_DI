@@ -1,4 +1,6 @@
-package com.example.android_di.activity
+package com.example.androiddi.activity
+
+import org.junit.Assert.*
 
 import androidx.lifecycle.Lifecycle
 import androidx.test.core.app.ActivityScenario
@@ -12,8 +14,8 @@ import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
-import com.example.android_di.R
-import com.example.android_di.utils.Utils
+import com.example.androiddi.R
+import com.example.androiddi.utils.Utils
 import org.hamcrest.CoreMatchers.containsString
 import org.junit.Assert.*
 import org.junit.Before

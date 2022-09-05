@@ -1,6 +1,6 @@
-package com.example.android_di.network.service
+package com.example.androiddi.network.service
 
-import com.example.android_di.model.Post
+import com.example.androiddi.model.Post
 import retrofit2.Call
 import retrofit2.http.*
 
